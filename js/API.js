@@ -1,4 +1,5 @@
-const url = 'http://localhost:4000/clientes';
+const url =
+  'https://my-json-server.typicode.com/julianmartinez-dev/CRM-CRUD-REST/clientes';
 
 //Cuando se crea un nuevo cliente
 export const nuevoCliente = async (cliente) => {
