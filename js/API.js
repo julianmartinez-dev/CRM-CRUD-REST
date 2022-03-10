@@ -1,5 +1,4 @@
-const url =
-  'https://my-json-server.typicode.com/julianmartinez-dev/CRM-CRUD-REST/clientes';
+const url = 'https://622973cebe12fc45389ef20b.mockapi.io/clientes';
 
 //Cuando se crea un nuevo cliente
 export const nuevoCliente = async (cliente) => {
@@ -34,6 +33,7 @@ export const eliminarCliente = async (id) => {
     await fetch(`${url}/${id}`, {
       method: 'DELETE',
     });
+    window.location.reload();
   } catch (error) {
     console.log(error);
   }
